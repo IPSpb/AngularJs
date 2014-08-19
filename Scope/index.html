@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>Scope область видимости</title>
+    <meta charset="UTF-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div ng-controller="GreetCtrl">
+        Hello {{name}}
+        <button ng-click="action()">Ок</button>
+    </div>
+    <div ng-controller="ListCtrl">
+        <ol>
+            <li ng-repeat="name in names">{{name}}</li>
+        </ol>
+    </div>
+</body>
+</html>
